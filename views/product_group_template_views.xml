@@ -1,0 +1,32 @@
+<odoo>
+    <data>
+
+        <!-- Create product Groups tree view  -->
+        <record model="ir.ui.view" id="netlinks_product_groups_view_tree">
+            <field name="name">netlinks.product.groups.view.tree</field>
+            <field name="model">netlinks.product.group</field>  
+            <field name="arch" type="xml">
+                <tree string="Product Groups" editable="bottom">
+                    <field name="name"/>
+                    <field name="product_ids"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Create product Groups form view  -->
+        <record model="ir.ui.view" id="netlinks_product_groups_view_form">
+            <field name="name">netlinks.product.groups.view.fomr</field>
+            <field name="model">netlinks.product.group</field>  
+            <field name="arch" type="xml">
+                <form string="Product Groups">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

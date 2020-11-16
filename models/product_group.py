@@ -10,6 +10,6 @@ class ProductGroup(models.Model):
                          'The category name must be unique !')]
 
     name = fields.Char(string='Group Name', required=True)
-    group_id = fields.One2many('product.template', 'group_id')
+    product_ids = fields.One2many('product.template', 'group_id')
 
     
