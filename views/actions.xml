@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <!-- Actions: Open product groups model views-->
+        <record model="ir.actions.act_window" id="open_product_group_action">
+            <field name="name">Open Product Group Action</field>
+            <field name="res_model">netlinks.product.group</field>
+            <field name="view_mode">tree,form</field>
+            <field name="usage">menu</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">No Group Found!</p>
+            </field>
+        </record>
+    </data>
+</odoo>

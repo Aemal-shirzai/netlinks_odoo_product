@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <menuitem 
+            id="product_groups" 
+            name="Product Groups" 
+            sequence="0" 
+            parent="stock.menu_product_in_config_stock"
+            action="netlinks.open_product_group_action"
+            />
+    </data>
+</odoo>
