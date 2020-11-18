@@ -1,0 +1,8 @@
+.oe_title h1 {
+    overflow: hidden;
+    word-break: break-all;
+}
+.o_kanban_record_title span {
+    overflow: hidden;
+    word-break:  break-all;
+}

@@ -1,6 +1,13 @@
 <odoo>
   <data>
 
+    <template id="assets_backend" name="Invetory Custom assets" inherit_id="web.assets_backend">
+        <xpath expr="link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/netlinks/static/src/css/style.css"/>  
+        </xpath>
+    </template> 
+
+
       <!-- Override product.template Form view  -->
       <record model="ir.ui.view" id="netlinks_product_template_only_form_view">
           <field name="name">netlinks.product.template.only.form.view</field>
