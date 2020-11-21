@@ -15,13 +15,13 @@ full_imgs_path = join(script_path, 'imgs')
 # Connection and reading excel file
 try:
     wb = xlrd.open_workbook(full_path, on_demand=True)
-    cur_connection = psycopg2.connect(user="ubuntu",password="ubuntu@123",host="localhost",database="netlinks_db")
+    cur_connection = psycopg2.connect(user="dbUser",password="dbPasswrod",host="localhost",database="databasename")
     cursor = cur_connection.cursor()
     # XML-RPC CONNECTION
     url = "http://localhost:8069"
-    db = "netlinks_db"
-    username = 'admin'
-    password =  'admin'
+    db = "datbase name"
+    username = 'xml-rpc username'
+    password =  'xml-rpc password'
     common = xmlrpc.client.ServerProxy('{}/xmlrpc/2/common'.format(url))
     uid = common.authenticate(db, username, password, {})
     models = xmlrpc.client.ServerProxy('{}/xmlrpc/2/object'.format(url))

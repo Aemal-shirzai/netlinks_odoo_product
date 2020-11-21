@@ -29,7 +29,6 @@
         'views/menus.xml',
         'views/product_template_views.xml',
         'views/product_group_template_views.xml',
-        'views/templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

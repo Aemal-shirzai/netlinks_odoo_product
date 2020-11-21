@@ -25,6 +25,7 @@ This module modify the built in odoo product module and add some extra fields to
     - style.css: This File contain some css for the kanban and form view of product.template.\
     
 4. ex_Scripts: This Folder contain the script which add the excel file data to the database.
+5. ir.model.access.csv: Security rules for the module
 
 ## How To Run:
 1. Download/Clone the project
